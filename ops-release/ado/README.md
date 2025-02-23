@@ -25,4 +25,3 @@
 - Query Azure Monitor alerts: Observe the configured Azure Monitor alert rules for active alerts.
 - Invoke REST API: Make a call to a REST API and continues if it returns a successful response.
 - Query work items: Ensure the number of matching work items returned from a query is within a threshold.
-
