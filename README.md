@@ -56,7 +56,7 @@ Devops can and ideally should encompass this entire process. The role often star
 
 ## Devops continuum
 
-![DevOps Continuum](devops_contiuum.jpg)
+![DevOps Continuum](./assets/devops_contiuum.jpg)
 
 The DevOps Continuum represents a seamless, cyclical process that unifies software delivery and operations. Through this continuous flow, development and operations activities merge into a natural feedback loop that propels ongoing improvement. By embracing this iterative approach, organizations achieve quicker feature deployments while fostering stronger team collaboration. The continuum naturally reduces deployment-related risks and promotes an environment of constant learning and adaptation. Perhaps most importantly, this methodology leads to more reliable systems that better serve business needs.
 
@@ -77,6 +77,14 @@ The Operations phase focuses on the reliable delivery and maintenance of softwar
 - **Deploy**: Jenkins, Github Actions, Ansible, Terraform, Helm
 - **Observe**: Monitoring and Operations, Support, Triage, Nagios, Prometheus, Grafana, ELK Stack, Incident Capture and Response, SRE, SLAs/SLOs/SLIs
 
+### I wish I had
+
+For each phase, I go over features and components to the devops process I hope I have on any project I'm on. This is built from real experience, taking into account times projects ran smoothly and times projects had some hiccups, to distill down what I believe are the core pieces a shop should focus on when building out and improving their devops solutions.
+
+### Why it Matters
+
+Questions are one of the most valuable tools at engineers' disposal, and the most important one is perhaps "Why?" Why drives context, reasoning, and purpose. It frames a problem statement and points to desirable outcome. This should be the unilateral focus of any engineering shop: to understand *why* they are building what they are building. It informs technical architecture, toolchains and technologies chosen for the solution, and and backlog prioritization. Review each phases' "Why it Matters" and reflect on its place in the overall DevOps Continuum
+
 #### Development - Build versus Operations - Release
 
 You may have noticed that there are continuous integration concerns in both the development and operations sides of the continuum, specifically in the "build" and "release" phases. These two phases have a good deal of overlap in terms of concepts, however there are different concerns and problems to solve in each respective phase. 
@@ -96,6 +104,8 @@ The pipeline is the focus of your continuous improvement loop.
 A typical pipeline will include the following stages: build automation and continuous integration, test automation, and deployment automation.
 
 ## Automations
+
+Automations are the bread and butter of tangible assets that a DevOps Engineer can produce. They build Scripts, pipelines, and toolings drive the backbone engineering efforts.
 
 - Build automation and continuous integration
     - The pipeline starts by building the binaries to create the deliverables passed to the following stages. New features implemented by the developers are integrated into the central code base, built, and unit tested. It's the most direct feedback cycle that informs the development team about the health of their application code.
@@ -140,10 +150,68 @@ Tech Debt is often the result of reasons such as:
 - Taking shortcuts to meet deadlines.
 - Leaving dead code in place.
 
-## I wish I had
+## DevOps and Culture
 
-In each section, I go over features and components to the devops process I hope I have on any project I'm on. This is built from real experience, taking into account times projects ran smoothly and times projects had some hiccups, to distill down what I believe are the core pieces a shop should focus on when building out and improving their devops solutions.
+## Culture and Training
 
-## Why it Matters
+Creating a DevOps culture requires deliberate effort in training and upskilling across the organization. It's not just about tools and technologies - it's about transforming how teams think about and approach their work.
 
-Questions are one of the most valuable tools at engineers' disposal, and the most important one is perhaps "Why?" Why drives context, reasoning, and purpose. It frames a problem statement and points to desirable outcome. This should be the unilateral focus of any engineering shop: to understand *why* they are building what they are building. It informs technical architecture, toolchains and technologies chosen for the solution, and and backlog prioritization. Review each phases' "Why it Matters" and reflect on its place in the overall DevOps Continuum
+### Building DevOps Mindset
+
+The transition to DevOps practices requires both technical and cultural shifts:
+
+- Foster a learning environment where mistakes are viewed as opportunities
+- Encourage cross-functional knowledge sharing between development and operations
+- Promote systems thinking over siloed responsibility
+- Build trust through transparency and shared objectives
+
+### Training Approaches
+
+Successful DevOps transformation requires a multi-faceted training strategy:
+
+- Hands-on workshops with real-world scenarios
+- Pair programming sessions between dev and ops teams
+- Regular lunch-and-learn sessions on new tools and practices
+- Mentorship programs pairing experienced and junior team members
+- Certification paths for key DevOps tools and methodologies
+
+### Measuring Progress
+
+Track cultural transformation through:
+
+- Team velocity improvements
+- Reduced mean time to recovery (MTTR)
+- Increased deployment frequency
+- Employee satisfaction metrics
+- Cross-team collaboration indicators
+
+Remember that cultural change takes time. Start small, celebrate wins, and continuously reinforce DevOps principles through daily practices and team interactions.
+
+## Cycle Checks
+
+In a DevOps role, cycle checks refer to routine verification processes that ensure infrastructure, deployments, and applications are running as expected. These checks help maintain reliability, performance, and security throughout the software development and operations lifecycle. Here are some key areas where DevOps plays a role in cycle checks:
+
+- Infrastructure Health Checks
+Server & VM Monitoring: Checking CPU, memory, and disk utilization.
+Container Health: Ensuring Kubernetes pods, Docker containers, and related resources are functioning properly.
+Cloud Resource Checks: Verifying that cloud-based infrastructure (e.g., AWS, Azure, GCP) is correctly provisioned and running efficiently.
+- CI/CD Pipeline Checks
+Build & Deployment Verification: Ensuring builds pass all tests before deployment.
+Automated Testing: Running unit, integration, and security tests during each CI/CD cycle.
+Rollback Readiness: Verifying that rollback mechanisms are in place in case of deployment failures.
+- Security & Compliance Checks
+Vulnerability Scanning: Running security scans on applications, dependencies, and infrastructure.
+Access Control Audits: Reviewing IAM roles, permissions, and network security policies.
+Policy Enforcement: Ensuring that infrastructure as code (IaC) policies (e.g., Terraform, Helm) comply with organizational standards.
+- Observability & Monitoring Checks
+Log Analysis: Monitoring logs for anomalies and errors using tools like ELK, Loki, or Datadog.
+Alerting & Incident Response: Ensuring alerts are set up in tools like Prometheus, Grafana, or Azure Monitor.
+Tracing & Metrics Collection: Using OpenTelemetry (OTEL) or similar tools to track service performance.
+- Backup & Disaster Recovery Checks
+Data Backups: Verifying scheduled backups for databases and critical storage.
+Failover & High Availability Tests: Ensuring load balancers, auto-scaling, and failover mechanisms work correctly.
+Disaster Recovery Drills: Running simulations to validate recovery procedures.
+- Performance & Capacity Planning
+Load Testing: Running stress tests to check system scalability.
+Resource Optimization: Adjusting cloud and Kubernetes resource allocations to avoid over-provisioning.
+Cost Monitoring: Checking cloud spend and optimizing resource usage.
