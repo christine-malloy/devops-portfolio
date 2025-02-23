@@ -6,6 +6,8 @@ I specialize in implementing continuous integration and continuous deployment (C
 
 ## What is DevOps?
 
+According to Donovan Brown, "DevOps is the union of people, process, and products to enable continuous delivery of value to our end users."
+
 Devops is collaboration, communication, and culture.  It represents the strategic fusion of Development and Operations practices, bridging traditional gaps between software creation and system maintenance. This marriage of disciplines eliminates silos, fostering seamless collaboration between teams that historically operated independently.
 
 At its core, DevOps combines:
@@ -16,6 +18,26 @@ At its core, DevOps combines:
 - Cultural transformation that promotes unity and efficiency
 
 This integration enables faster delivery, improved reliability, and better business outcomes through continuous collaboration and feedback.
+
+## Why Devops?
+
+**One of the promises of DevOps is to deliver software both faster and with higher quality.**
+
+Previously, these two metrics have been almost opposites. The more quickly you went, the lower the quality. The higher the quality, the longer it took. But DevOps processes can help you find problems earlier, which usually means that they take less time to fix.
+
+Devops asks questions of the shop:
+- Failed builds percentage - Overall, what percentage of builds are failing?
+- Failed deployments percentage - Overall, what percentage of deployments are failing?
+- Ticket volume - What is the overall volume of customer or bug tickets?
+- Bug bounce percentage - What percentage of customer or bug tickets are reopened?
+- Unplanned work percentage - What percentage of the overall work is unplanned?
+
+DevOps is more than just a set of practices - it's a transformative approach that brings significant business value. By breaking down traditional silos between development and operations teams, organizations can achieve:
+- Speed: Accelerate software delivery and reduce time-to-market.
+- Operation: Improve system reliability, security, and scalability.
+- Foster a culture of collaboration, innovation, and shared ownership.
+- Enhance customer satisfaction through faster, more frequent updates and improvements.
+- Improve cost management of infrastructure. 
 
 ## Defining "SDLC"
 
@@ -55,15 +77,34 @@ The Operations phase focuses on the reliable delivery and maintenance of softwar
 - **Deploy**: Jenkins, Github Actions, Ansible, Terraform, Helm
 - **Observe**: Monitoring and Operations, Support, Triage, Nagios, Prometheus, Grafana, ELK Stack, Incident Capture and Response, SRE, SLAs/SLOs/SLIs
 
-## Why Devops?
+#### Development - Build versus Operations - Release
 
-DevOps is more than just a set of practices - it's a transformative approach that brings significant business value. By breaking down traditional silos between development and operations teams, organizations can achieve:
+You may have noticed that there are continuous integration concerns in both the development and operations sides of the contiuum, specifically in the "build" and "release" phases. These two phases have a good deal of overlap in terms of concepts, however there are different concerns and problems to solve in each respective phase. 
 
-- Speed: Accelerate software delivery and reduce time-to-market.
-- Operation: Improve system reliability, security, and scalability.
-- Foster a culture of collaboration, innovation, and shared ownership.
-- Enhance customer satisfaction through faster, more frequent updates and improvements.
-- Improve cost management of infrastructure. 
+## Pipelines
+
+The core idea is to create a repeatable, reliable, and incrementally-improving process for taking software from concept to customer.
+
+Each stage aims to verify the quality of new features from a different angle to validate the new functionality and prevent errors from affecting your users.
+
+The pipeline should provide feedback to the team. Also, visibility into the changes flows to everyone involved in delivering the new feature(s).
+
+A delivery pipeline enables the flow of more minor changes more frequently, with a focus on flow.
+
+The pipeline is the focus of your continuous improvement loop.
+
+A typical pipeline will include the following stages: build automation and continuous integration, test automation, and deployment automation.
+
+## Automations
+
+- Build automation and continuous integration
+    - The pipeline starts by building the binaries to create the deliverables passed to the following stages. New features implemented by the developers are integrated into the central code base, built, and unit tested. It's the most direct feedback cycle that informs the development team about the health of their application code.
+- Test automation
+    - The new version of an application is rigorously tested throughout this stage to ensure that it meets all wished system qualities. It's crucial that all relevant aspects—whether functionality, security, performance, or compliance—are verified by the pipeline. The stage may involve different types of automated or (initially, at least) manual activities.
+- Deployment automation
+    - A deployment is required every time the application is installed in an environment for testing, but the most critical moment for deployment automation is rollout time. Since the preceding stages have verified the overall quality of the system, It's a low-risk step.
+- Your pipeline needs platform provisioning and configuration management.
+    - The deployment pipeline is supported by platform provisioning and system configuration management. It allows teams to create, maintain, and tear down complete environments automatically or at the push of a button
 
 ## Greenfield Development
 
@@ -79,6 +120,30 @@ Greenfield development represents the exciting opportunity to build systems from
 
 By incorporating DevOps principles from inception, greenfield projects can avoid technical debt while maintaining the agility needed for rapid iteration and scaling.
 
+## DevOps May Hurt a Bit
+
+If it hurts, do it more often. Adopting new practices like going to the gym is likely to hurt first. The more you exercise the new techniques, the easier they'll become.
+Like training at the gym, where you first exercise large muscles before small muscles, adopt practices that have the most significant impact. Cross-train to develop synergy.
+
+## Technical Debt
+Technical Debt is a term that describes the future cost that will be incurred by choosing an easy solution today instead of using better practices because they would take longer to complete.
+
+Tech Debt is often the result of reasons such as:
+- Lack of coding style and standards.
+- Lack of or poor design of unit test cases.
+- Ignoring or not-understanding object oriented design principles.
+- Monolithic classes and code libraries.
+- Poorly envisioned the use of technology, architecture, and approach. (Forgetting that all system attributes, affecting maintenance, user experience, scalability, and others, need to be considered).
+- Over-engineering code (adding or creating code that isn't required, adding custom code when existing libraries are sufficient, or creating layers or components that aren't needed).
+- Insufficient comments and documentation.
+- Not writing self-documenting code (including class, method, and variable names that are descriptive or indicate intent).
+- Taking shortcuts to meet deadlines.
+- Leaving dead code in place.
+
 ## I wish I had
 
 In each section, I go over features and components to the devops process I hope I have on any project I'm on. This is built from real experience, taking into account times projects ran smoothly and times projects had some hiccups, to distill down what I believe are the core pieces a shop should focus on when building out and improving their devops solutions.
+
+## Why it Matters
+
+Questions are one of the most valuable tools at engineers' disposal, and the most important one is perhaps "Why?" Why drives context, reasoning, and purpose. It frames a problem statement and points to desirable outcome. This should be the unilateral focus of any engineering shop: to understand *why* they are building what they are building. It informs technical architecture, toolchains and technologies chosen for the solution, and and backlog prioritization. Review each phases' "Why it Matters" and reflect on its place in the overall DevOps Continuum

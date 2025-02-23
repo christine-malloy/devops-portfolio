@@ -43,6 +43,13 @@ Through systematic testing practices, we validate functionality, identify potent
 - Network performance metrics
 - Resource optimization
 
+### Test Taxonomy
+Defining a test taxonomy is an essential aspect of DevOps. The developers should understand the suitable types of tests in different scenarios.
+- L0 tests are a broad class of fast in-memory unit tests. It's a test that depends on code in the assembly under test and nothing else.
+- L1 tests might require assembly plus SQL or the file system.
+- L2 tests are functional tests run against testable service deployments. It's a functional test category requiring a service deployment but may have critical service dependencies stubbed out.
+- L3 tests are a restricted class of integration tests that run against production. They require a complete product deployment.
+
 ## Common tooling by language
 
 ### Python
@@ -74,3 +81,6 @@ Through systematic testing practices, we validate functionality, identify potent
 - Minitest - Unit testing
 - Capybara - Integration testing
 - Artillery - Performance testing
+
+## TDD and Greenfield Development
+

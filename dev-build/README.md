@@ -1,6 +1,6 @@
 # Development - Build
 
-## Overview
+## Bringing it all together
 The build phase is a pivotal stage where code changes are integrated, compiled, and validated within the broader development ecosystem. Many process bottlenecks are often found in this phase, so its important to pay special care and attention. This part of the cycle invovles:
 
 - Compiling source code into executable artifacts
@@ -26,7 +26,7 @@ Continuous Integration (CI) enables automated building and testing of code chang
 - Reduces integration problems
 - Supports rapid development cycles
 
-## Continous Development
+## Continuous Development
 Continuous Development (CD) streamlines software delivery through automation:
 
 - Automates release deployment processes
@@ -39,6 +39,8 @@ Continuous Development (CD) streamlines software delivery through automation:
 - Speeds up time-to-market
 - Improves development efficiency
 
+## Technologies and Components
+
 ## CI Platforms
 - Jenkins
 - Travis CI
@@ -46,13 +48,6 @@ Continuous Development (CD) streamlines software delivery through automation:
 - Concourse CI
 - Github Actions
 - AWS Code Build/Pipeline
-
-## Test Environments
-For each feature branch:
-- Ephemeral test environments automatically provisioned
-- Clean isolated testing environment per branch
-- Environments torn down after merge/close
-- Infrastructure as code ensures consistency
 
 ## Build Pipeline
 Key automated steps:
@@ -63,3 +58,14 @@ Key automated steps:
 5. Integration testing
 6. Environment deployment
 7. End-to-end validation
+
+## Test Environments 
+A critical need and common ask from engineers is automations and integrations to facilitate building empheral test environents that fully integrate their code into a temporary test version of the system, without deploying it to lower environments used for testing. Testing in lower environments such as a "dev", "qa", or "staging" should be a focus in other phases such as **release** and **deploy**.
+
+Goals:
+For each feature branch:
+- Ephemeral test environments automatically provisioned
+- Clean isolated testing environment per branch
+- Environments torn down after merge/close
+- Infrastructure as code ensures consistency
+
