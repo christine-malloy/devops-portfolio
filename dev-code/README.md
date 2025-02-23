@@ -20,7 +20,7 @@ Common language ecosystems and common use cases:
 - JavaScript/Node.js: Web, serverless
 - Python: Data science, automation, web scraping
 - Java: Enterprise applications
-- Go: Cloud infrastructure
+- [Golang](https://go.dev/) - [portfolio docs](./golang/README.md): produced by google, broad use cases including CLI apps, automation tooling, cloud tooling, systems requiring high concurrency
 - Rust: Systems programming
 - C/C++: Operating systems, embedded systems
 - Ruby: Web development, scripting
