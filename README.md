@@ -1,4 +1,4 @@
-# Devops Porfolio
+# Devops Portfolio
 
 Welcome to my DevOps portfolio! This repository showcases my expertise in both Development and Operations, highlighting the tools and technologies I utilize to streamline software delivery pipelines.
 
@@ -32,7 +32,7 @@ Devops asks questions of the shop:
 - Bug bounce percentage - What percentage of customer or bug tickets are reopened?
 - Unplanned work percentage - What percentage of the overall work is unplanned?
 
-DevOps is more than just a set of practices - it's a transformative approach that brings significant business value. By breaking down traditional silos between development and operations teams, organizations can achieve:
+DevOps is more than just a set of practices - it's a transformation approach that brings significant business value. By breaking down traditional silos between development and operations teams, organizations can achieve:
 - Speed: Accelerate software delivery and reduce time-to-market.
 - Operation: Improve system reliability, security, and scalability.
 - Foster a culture of collaboration, innovation, and shared ownership.
@@ -50,11 +50,11 @@ The SDLC, Software Delivery Lifecycle, represents the complete loop a team moves
 5. Production deploy. Once the feature has been rubber stamped by QA and product, the feature can go out to the production environment. The pipelines and automations built to support this are typically built by the devops team, but in smaller shops may be built by the developers themselves.
 6. Perhaps the most crucial step, this final step is for monitoring, feedback, and iteration. Invariably, engineers don't get it right the first time, because codifying an abstract use case into a script a computer can run is challenging. 
 
-It's essential to have a pipeline that gathers feedback and feeds it back it the begining of the SDLC, so software can be improved upon. This is agile. 
+It's essential to have a pipeline that gathers feedback and feeds it back it the beginning of the SDLC, so software can be improved upon. This is agile. 
 
-Devops can and ideally should ecompass this entire process. The role often starts with pipelines around continuous integration and delivery, but the role can offer much more to a shop in order to improve the software development experience in general.
+Devops can and ideally should encompass this entire process. The role often starts with pipelines around continuous integration and delivery, but the role can offer much more to a shop in order to improve the software development experience in general.
 
-## Devops Contiuum
+## Devops continuum
 
 ![DevOps Continuum](devops_contiuum.jpg)
 
@@ -79,7 +79,7 @@ The Operations phase focuses on the reliable delivery and maintenance of softwar
 
 #### Development - Build versus Operations - Release
 
-You may have noticed that there are continuous integration concerns in both the development and operations sides of the contiuum, specifically in the "build" and "release" phases. These two phases have a good deal of overlap in terms of concepts, however there are different concerns and problems to solve in each respective phase. 
+You may have noticed that there are continuous integration concerns in both the development and operations sides of the continuum, specifically in the "build" and "release" phases. These two phases have a good deal of overlap in terms of concepts, however there are different concerns and problems to solve in each respective phase. 
 
 ## Pipelines
 

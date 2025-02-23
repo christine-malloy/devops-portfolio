@@ -16,7 +16,7 @@ The deployment pipeline enables:
 - Continuous integration
 - Monitoring and feedback
 
-## Contiuous Deployment
+## Continuous Deployment
 
 Continuous Deployment (CD) is an advanced DevOps practice where code changes are automatically deployed to production after passing automated tests. This approach eliminates manual intervention in the deployment process.
 
@@ -61,6 +61,8 @@ When we focus on the deployment of the Infrastructure, we should first consider 
 - Platform as a Service (PaaS) and Functions as a Service (FaaS). For example, Azure SQL Database in both PaaS and serverless options.
 - Clusters.
 - Service Connections.
+
+
 
 ### Design and Implementation of Access Control in Cloud-Based DevOps Platforms
 

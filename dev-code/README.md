@@ -8,7 +8,7 @@ Success in the coding phase hinges on several key elements. Teams must prioritiz
 When executed properly, a well-structured development phase yields significant benefits. New team members can onboard faster with standardized environments and clear documentation. Production issues decrease through thorough testing and environment parity. Most importantly, automated testing and consistent practices help maintain high code quality across the entire development team.
 
 ## I wish I had
-When developing a new service, I always push to have the local environment set up be as close as possible to the remote set up. This to reduce complexitities and context switching when moving from environments, maintian manifests between environments, and promote environment parity. Often times bugs can be very challenging to fix if they can't be replicated in local environments, and vice versa. It's important to ensure the engineers can standup an idempotent and reliable environment to foster efficient development.
+When developing a new service, I always push to have the local environment set up be as close as possible to the remote set up. This to reduce complexities and context switching when moving from environments, maintain manifests between environments, and promote environment parity. Often times bugs can be very challenging to fix if they can't be replicated in local environments, and vice versa. It's important to ensure the engineers can standup an idempotent and reliable environment to foster efficient development.
 
 ## Languages
 In software development, code is written following different paradigms, primarily:
@@ -44,7 +44,7 @@ Development Environment Essentials:
 2. **Testing Tools**
   - Test-Driven Development (TDD)
   - Unit testing libraries (developed with TDD to ensure most reliable testing suite)
-  - Integration testing suites (running database queries to test system boundries)
+  - Integration testing suites (running database queries to test system boundaries)
   - End to end testing frameworks (Selenium)
 
 3. **Local Development Stack**
@@ -61,5 +61,5 @@ Development Environment Essentials:
 
 Best Practices:
 - Mirror production environment locally
-- Use generated test data that resemebles live customer data (consider sanitizing production data, but this comes with risks)
+- Use generated test data that resembles live customer data (consider sanitizing production data, but this comes with risks)
 - Implement CI/CD pipelines
