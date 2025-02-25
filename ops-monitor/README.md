@@ -43,27 +43,32 @@ Monitoring and observing is perhaps the single most important phase in the proce
 
 In a DevOps role, cycle checks refer to routine verification processes that ensure infrastructure, deployments, and applications are running as expected. These checks help maintain reliability, performance, and security throughout the software development and operations lifecycle. Here are some key areas where DevOps plays a role in cycle checks:
 
-- Infrastructure Health Checks
+1. Infrastructure Health Checks
 Server & VM Monitoring: Checking CPU, memory, and disk utilization.
 Container Health: Ensuring Kubernetes pods, Docker containers, and related resources are functioning properly.
 Cloud Resource Checks: Verifying that cloud-based infrastructure (e.g., AWS, Azure, GCP) is correctly provisioned and running efficiently.
-- CI/CD Pipeline Checks
+
+2. CI/CD Pipeline Checks
 Build & Deployment Verification: Ensuring builds pass all tests before deployment.
 Automated Testing: Running unit, integration, and security tests during each CI/CD cycle.
 Rollback Readiness: Verifying that rollback mechanisms are in place in case of deployment failures.
-- Security & Compliance Checks
+
+3. Security & Compliance Checks
 Vulnerability Scanning: Running security scans on applications, dependencies, and infrastructure.
 Access Control Audits: Reviewing IAM roles, permissions, and network security policies.
 Policy Enforcement: Ensuring that infrastructure as code (IaC) policies (e.g., Terraform, Helm) comply with organizational standards.
-- Observability & Monitoring Checks
+
+4. Observability & Monitoring Checks
 Log Analysis: Monitoring logs for anomalies and errors using tools like ELK, Loki, or Datadog.
 Alerting & Incident Response: Ensuring alerts are set up in tools like Prometheus, Grafana, or Azure Monitor.
 Tracing & Metrics Collection: Using OpenTelemetry (OTEL) or similar tools to track service performance.
-- Backup & Disaster Recovery Checks
+
+5. Backup & Disaster Recovery Checks
 Data Backups: Verifying scheduled backups for databases and critical storage.
 Failover & High Availability Tests: Ensuring load balancers, auto-scaling, and failover mechanisms work correctly.
 Disaster Recovery Drills: Running simulations to validate recovery procedures.
-- Performance & Capacity Planning
+
+6. Performance & Capacity Planning
 Load Testing: Running stress tests to check system scalability.
 Resource Optimization: Adjusting cloud and Kubernetes resource allocations to avoid over-provisioning.
 Cost Monitoring: Checking cloud spend and optimizing resource usage.
@@ -358,10 +363,3 @@ Stakeholders at all levels need visibility into the platform's performance, heal
 - Incident impact summaries
 - Change management updates
 - Milestone tracking
-
-### Value Stream Visibility
-- Time-to-market metrics
-- Development pipeline efficiency
-- Resource utilization
-- Bottleneck identification
-- Cost per deployment
