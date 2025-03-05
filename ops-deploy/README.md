@@ -54,6 +54,7 @@ GitOps is a modern software delivery approach that leverages Git repositories as
 - **Rollback and recovery**: Use Git-based workflows to manage rollbacks and recovery procedures in case of deployment failures or unexpected issues. As a result, reverting changes in Git repositories should trigger automatic rollback actions in the CI/CD pipeline, restoring the system to a previous known good state.
 - **Observability and Monitoring**: Implement monitoring, logging, and observability practices to track system health, performance metrics, and deployment status. Integrate monitoring tools such as AWS Cloudwatch, Azure Monitor, Datadog, Prometheus, or Grafana with GitOps workflows to gain visibility into system behavior and detect anomalies in real-time.
 
+[Further reading](./gitops/README.md)
 ### Provision and configure target environments
 When we focus on the deployment of the Infrastructure, we should first consider the differences between the target environments that we can deploy to:
 - On-Premises servers.

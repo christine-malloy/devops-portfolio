@@ -26,19 +26,6 @@ Continuous Integration (CI) enables automated building and testing of code chang
 - Reduces integration problems
 - Supports rapid development cycles
 
-## Continuous Development
-Continuous Development (CD) streamlines software delivery through automation:
-
-- Automates release deployment processes
-- Enables rapid and reliable deployments
-- Maintains consistent deployment procedures
-- Reduces manual intervention and errors
-- Supports multiple deployment environments
-- Facilitates rollback capabilities
-- Ensures repeatable release processes
-- Speeds up time-to-market
-- Improves development efficiency
-
 ## Technologies and Components
 
 ## CI Platforms
@@ -59,7 +46,7 @@ Key automated steps:
 6. Environment deployment
 7. End-to-end validation
 
-## Test Environments 
+## Test Environments - Branch Builds
 A critical need and common ask from engineers is automations and integrations to facilitate building ephemeral test environments that fully integrate their code into a temporary test version of the system, without deploying it to lower environments used for testing. Testing in lower environments such as a "dev", "qa", or "staging" should be a focus in other phases such as **release** and **deploy**.
 
 Goals:

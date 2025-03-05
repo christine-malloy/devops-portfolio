@@ -3,9 +3,10 @@
 ## Release Management
 The purpose of the release phase is to prepare releases to deployed environments, starting with lower environments for testing, and eventually ending with deploying to production for live release. Pipeline reliability and robustness is paramount for this phase. Without a strong CI/CD story, **release** will become a bottleneck for the entire rest of the process and cause massive delays in development.
 
-## Pipeline
 
-TODO: Describe CI/CD and how 
+## CI/CD
+
+Release is about tying the Build phase (Continuous Integration) with the Deploy Phase (Continuous Deployment)
 
 ### Continuous Integration
 Continuous Integration (CI) enables automated building and testing of code changes:
@@ -32,8 +33,17 @@ Continuous Development (CD) streamlines software delivery through automation:
 - Speeds up time-to-market
 - Improves development efficiency
 
-### The grey area in between
-TODO
+## Platform Deploy - Releasing a Microservices based system
+
+When releasing a microservices based system, its essential to coordinate the release across the related services and ensure versions are compatible with each other
+
+### Backwards compatibility
+
+### Deprecations
+
+### 
+
+## Rolling back a Release
 
 ## Technologies
 Common CI/CD technologies include:
